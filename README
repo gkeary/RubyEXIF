@@ -1,0 +1,9 @@
+This project will:
+start at a given directory.
+recursively idendify JPG files
+Pass the file to the EXIFTOOL executagle and identify EXIF tags.
+Collect data in a hash which is keyed by EXIF:DateTimeOriginal.
+Identifying duplicates as it goes.
+
+provide an output hash which identifies all duplicate photos.
+
