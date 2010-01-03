@@ -1,7 +1,7 @@
 This project will:
 start at a given directory.
 recursively identify JPG files
-Pass each file to the EXIFTOOL executable and obain all of the EXIF tags.
+Pass each file to the EXIFTOOL executable and obtain all of the EXIF tags.
 Collect data in a hash which is keyed by EXIF:DateTimeOriginal.
 Identifying duplicates as it goes.
 
@@ -10,7 +10,7 @@ provide an output hash which identifies all duplicate photos.
 
 installing ruby-debug-ide is a problem in Windows....
 JetBrains has to get their act together.
-For now, do not debug in Rubymine....
+For now, do not debug in RubyMine....
 ref:  http://youtrack.jetbrains.net/issue/RUBY-4932
 
 
