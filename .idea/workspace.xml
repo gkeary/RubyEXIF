@@ -48,7 +48,7 @@
       <file leaf-file-name="my_test.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="35" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+            <state line="7" column="35" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -72,10 +72,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exif.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/exif.rb">
+      <file leaf-file-name="prep.ps1" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prep.ps1">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="43" selection-start="412" selection-end="412" vertical-scroll-proportion="0.53125">
+            <state line="47" column="36" selection-start="345" selection-end="1106" vertical-scroll-proportion="-17.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exif.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exif.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="-1.4166666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exifr.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/ruby/lib/ruby/gems/1.8/gems/gems/exifr-0.10.9/lib/exifr.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jpeg.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/ruby/lib/ruby/gems/1.8/gems/gems/exifr-0.10.9/lib/jpeg.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tiff.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://C:/ruby/lib/ruby/gems/1.8/gems/gems/exifr-0.10.9/lib/tiff.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="154" column="0" selection-start="5154" selection-end="5154" vertical-scroll-proportion="0.93333334">
               <folding />
             </state>
           </provider>
@@ -95,6 +131,7 @@
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/my_test.rb" />
         <option value="$PROJECT_DIR$/lib/exif.rb" />
+        <option value="$PROJECT_DIR$/exif.rb" />
       </list>
     </option>
   </component>
@@ -132,6 +169,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RubyEXIF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RubyEXIF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -142,6 +189,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="C:\ruby\lib\ruby\gems\1.8\gems\gems\exifr-0.10.9\lib" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -299,7 +347,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="10" width="1260" height="984" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -309,7 +357,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495935" sideWeight="0.66227543" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -361,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/rb/testing/patch/testunit/test/unit/ui/testrunnermediator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rb/testing/patch/testunit/test/unit/ui/teamcity/testrunner.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="214" column="0" selection-start="3204" selection-end="3204" vertical-scroll-proportion="0.0">
@@ -377,14 +418,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+        <state line="7" column="35" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/exif.rb">
+    <entry file="file://$APPLICATION_HOME_DIR$/rb/testing/patch/testunit/test/unit/ui/testrunnermediator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="43" selection-start="412" selection-end="412" vertical-scroll-proportion="0.53125">
+        <state line="35" column="0" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prep.ps1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="36" selection-start="345" selection-end="1106" vertical-scroll-proportion="-17.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exif.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="-1.4166666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ruby/lib/ruby/gems/1.8/gems/gems/exifr-0.10.9/lib/exifr.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ruby/lib/ruby/gems/1.8/gems/gems/exifr-0.10.9/lib/jpeg.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ruby/lib/ruby/gems/1.8/gems/gems/exifr-0.10.9/lib/tiff.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="0" selection-start="5154" selection-end="5154" vertical-scroll-proportion="0.93333334">
           <folding />
         </state>
       </provider>
