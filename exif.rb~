@@ -1,67 +1,32 @@
 require 'exifr'
 
-class Photo
 
-  attr_accessor  :original_date_time, :full_path, :exif
-  @@dupe_hash = {}   # :key => :dupe_count}
-  
-    def initialize (exif, stamp = Date.new, full_path= File.new)
-      @original_date_time = stamp
-      if @@dupe_hash.has_key? stamp
-        @@dupe_hash[stamp] += 1
-      else
-        @@dupe_hash[stamp] = 1
-      end
-      @full_path= full_path
-      @exif = exif
-      PhotoCollection::add_to_array self
-    end
-
-    def is_dupe?
-     return @@dupe_hash[@original_date_time] > 2
-    end
-    def self.get_hash
-      return @@dupe_hash
-    end
-  end
-
-class PhotoCollection
+class Exif
 
   attr :full_path, true
   attr :jpgfiles, true
-  @@photos = []
+
   def initialize
-    if ARGV[0].nil?
-      $startpath = 'c:/exif/rubyexif/lib'
-      else
-        $startpath = ARGV[0]
-    end
-    #$startpath = ARGV[0].nil? ?  'C:/exif/rubyexif/lib': ARGV[0]
-    @jpgfiles=Dir[File.join($startpath,"**/*.jpg")]
-    puts "jpgcount: #{ @jpgfiles.length}"
+  $startpath = ARGV[0].nil? ?  'C:/exif/rubyexif/lib': ARGV[0]
+  @jpgfiles=Dir[File.join($startpath,"**/*.jpg")]
+  puts "jpgcount: #{ @jpgfiles.length}"
   # @jpgfiles=Dir[File.join($startpath,"JPGFiles","**/*.jpg")]
   end
 
-  def self.add_to_array (ph)
-    if ph.class != Photo
-      throw "Parameter must be a Photo"
-    end
-    @@photos.push(ph)
+  def look_for_it
+    false
   end
-#  def look_for_it
-#    false
-#  end
 
-  def get_jpgfiles_size
+  def get_size
        @jpgfiles.size
   end
-  def list_jpgfiles
+  def list_files
      @jpgfiles.each {|f| puts x}
      @jpgfiles.each do |x| puts x end
 
   end
 
-  def show_jpgfiles_short_paths
+  def show_stamps
     @jpgfiles.each do |x|
       s = EXIFR::JPEG.new(x).date_time
       y = x[45..-1] # 'c:/documents and settings/gkeary/my documents/my pictures')
@@ -72,34 +37,21 @@ class PhotoCollection
   def get_first_width
       return EXIFR::JPEG.new(@jpgfiles[0]).width
   end
-
   def load_hash
-      photo_hash = { }
-      @jpgfiles.each do |file|
-            b = []
-            ex = EXIFR::JPEG.new(file)
-            hash = { ex.date_time=> ex, :num => 1, :fullpath=> file }
-            if( photo_hash.has_key? ex.date_time )
-              b = photo_hash[ex.date_time]
-              hash[:num] += 1
-              hash[:fullpath] = file
-              photo_hash[ex.date_time]= b.push(hash)
-            else
-              photo_hash[ex.date_time] =  b.push(hash)
+      PhotoHash = { }
+      @jpgfiles.each do |x|
+            h1 = EXIFR::JPEG.new(x)
+            h2 = {:num=> 1, :name=> x}
+
+            if (PhotoHash.contains(h1[date_time]))
+                 h2[:num]++
+                 h1.replace(h2)
             end
+          PhotoHash[h1.date_time].value.push(h1)
       end
-      return photo_hash
-  end #load_hash
-  def load_photo
-    photo_array = []
-    @jpgfiles.each do |file|
-      ex = EXIFR::JPEG.new(file)
-      photo = Photo.new(ex, ex.date_time, file)
-      photo_array.push(photo)
-    end
-    return photo_array
-  end
-  end  #Exif
+      return PhotoHash
+    end #load_hash
+end  #Exif
 
 
   if ($0 == __FILE__)
@@ -107,13 +59,13 @@ class PhotoCollection
     puts "Argument: #{ARGV[0]} "
     $startpath = ARGV[0]
     puts "Argument: #{ $startpath}"
-    e = PhotoCollection.new
-    puts e.inspect
-    puts e.get_jpgfiles_size
-    e.show_jpgfiles_short_paths
+    e = Exif.new
+    #puts e.inspect
+    puts e.get_size
+    e.show_stamps
     e.get_first_width
-    #e.load_hash
-    collection = e.load_photo
+
+    e.load_hash
   end
 
 
