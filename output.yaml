@@ -1,0 +1,36 @@
+C:\ruby\bin\ruby.exe -e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift) C:/EXIF/RubyEXIF/tryme.rb
+6
+---
+- - k1
+  - duplicate: true
+    1: C:/exif/rubyexif/lib/JPGFiles/IMG_2118.jpg
+    3: C:/exif/rubyexif/lib/JPGFiles/TestCopy/IMG_2118.jpg
+    ts: 2008-09-28 13:23:30 -04:00
+- - k2
+  - duplicate: true
+    1: C:/exif/rubyexif/lib/JPGFiles/IMG_2117.jpg
+    3: C:/exif/rubyexif/lib/JPGFiles/TestCopy/IMG_2117.jpg
+    ts: 2008-09-28 13:15:51 -04:00
+- - k3
+  - duplicate: true
+    1: C:/exif/rubyexif/lib/JPGFiles/IMG_2115.jpg
+    3: C:/exif/rubyexif/lib/JPGFiles/TestCopy/IMG_2115.jpg
+    ts: 2008-09-28 13:14:45 -04:00
+- - k4
+  - duplicate: true
+    1: C:/exif/rubyexif/lib/JPGFiles/IMG_2116.jpg
+    3: C:/exif/rubyexif/lib/JPGFiles/TestCopy/IMG_2116.jpg
+    ts: 2008-09-28 13:15:31 -04:00
+- - k5
+  - duplicate: true
+    1: C:/exif/rubyexif/lib/JPGFiles/IMG_2114.jpg
+    3: C:/exif/rubyexif/lib/JPGFiles/TestCopy/IMG_2114.jpg
+    4: C:/exif/rubyexif/lib/JPGFiles/xxx.jpg
+    ts: 2008-09-28 13:14:14 -04:00
+- - k6
+  - duplicate: true
+    1: C:/exif/rubyexif/lib/JPGFiles/IMG_2119.jpg
+    3: C:/exif/rubyexif/lib/JPGFiles/TestCopy/IMG_2119.jpg
+    ts: 2008-09-28 13:23:37 -04:00
+
+Process finished with exit code 0

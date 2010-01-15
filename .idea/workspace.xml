@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="3e21710d-306f-42b7-8b0b-ea2d2c824465" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tryme.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/gkeary.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/gkeary.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_test.rb" afterPath="$PROJECT_DIR$/my_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exif.rb" afterPath="$PROJECT_DIR$/exif.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/output.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tryme.rb" afterPath="$PROJECT_DIR$/tryme.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RubyEXIF.iws" />
@@ -35,10 +32,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tryme.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tryme.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tryme.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="14" selection-start="609" selection-end="609" vertical-scroll-proportion="0.62425447">
+            <state line="11" column="31" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -47,7 +44,16 @@
       <file leaf-file-name="exif.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exif.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="31" selection-start="1646" selection-end="1646" vertical-scroll-proportion="-1.125">
+            <state line="119" column="33" selection-start="2737" selection-end="2737" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output.yaml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/output.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="2" selection-start="1181" selection-end="1181" vertical-scroll-proportion="1.8250498">
               <folding />
             </state>
           </provider>
@@ -87,6 +93,7 @@
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/exif.rb" />
         <option value="$PROJECT_DIR$/tryme.rb" />
+        <option value="$PROJECT_DIR$/output.yaml" />
       </list>
     </option>
   </component>
@@ -317,17 +324,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="968" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32844934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24880762" sideWeight="0.22100122" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24880762" sideWeight="0.37118438" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24880762" sideWeight="0.43467644" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24880762" sideWeight="0.2844933" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32722834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32722834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -367,11 +374,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/rb/testing/patch/testunit/test/unit/ui/teamcity/testrunner.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="0" selection-start="3204" selection-end="3204" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rb/testing/patch/testunit/test/unit/ui/testrunnermediator.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0" />
@@ -411,13 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exif.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="31" selection-start="1646" selection-end="1646" vertical-scroll-proportion="-1.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/JPGFiles/IMG_2118.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -450,7 +445,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tryme.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="14" selection-start="609" selection-end="609" vertical-scroll-proportion="0.62425447">
+        <state line="11" column="31" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exif.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="33" selection-start="2737" selection-end="2737" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="2" selection-start="1181" selection-end="1181" vertical-scroll-proportion="1.8250498">
           <folding />
         </state>
       </provider>
