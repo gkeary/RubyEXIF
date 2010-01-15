@@ -2,8 +2,10 @@
   <dictionary name="gkeary">
     <words>
       <w>argv</w>
+      <w>exifr</w>
       <w>jpeg</w>
       <w>startpath</w>
+      <w>yaml</w>
     </words>
   </dictionary>
 </component>

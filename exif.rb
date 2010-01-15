@@ -38,7 +38,7 @@ class PhotoCollection
     end
     #$startpath = ARGV[0].nil? ?  'C:/exif/rubyexif/lib': ARGV[0]
     @jpgfiles=Dir[File.join($startpath,"**/*.jpg")]
-    puts "jpgcount: #{ @jpgfiles.length}"
+    #puts "jpgcount: #{ @jpgfiles.length}"
   # @jpgfiles=Dir[File.join($startpath,"JPGFiles","**/*.jpg")]
   end
 
@@ -48,23 +48,21 @@ class PhotoCollection
     end
     @@photos.push(ph)
   end
-#  def look_for_it
-#    false
-#  end
+
 
   def get_jpgfiles_size
        @jpgfiles.size
   end
-  def list_jpgfiles
-     @jpgfiles.each {|f| puts x}
-     @jpgfiles.each do |x| puts x end
 
-  end
-
-  def show_jpgfiles_short_paths
+  def show_stamp
     @jpgfiles.each do |x|
       s = EXIFR::JPEG.new(x).date_time
-      y = x[45..-1] # 'c:/documents and settings/gkeary/my documents/my pictures')
+      z = x.length
+      if z > 50
+        y = x[45..-1] # 'c:/documents and settings/gkeary/my documents/my pictures')
+        else
+        y = x[1..-1] # 'c:/documents and settings/gkeary/my documents/my pictures')
+      end
       puts "stamp: #{s}| #{y}"
     end
   end
@@ -90,7 +88,7 @@ class PhotoCollection
       end
       return photo_hash
   end #load_hash
-  def load_photo
+  def get_array_of_photos
     photo_array = []
     @jpgfiles.each do |file|
       ex = EXIFR::JPEG.new(file)
@@ -104,16 +102,17 @@ class PhotoCollection
 
   if ($0 == __FILE__)
 
-    puts "Argument: #{ARGV[0]} "
+    #puts "Argument: #{ARGV[0]} "
     $startpath = ARGV[0]
     puts "Argument: #{ $startpath}"
     e = PhotoCollection.new
     puts e.inspect
     puts e.get_jpgfiles_size
-    e.show_jpgfiles_short_paths
+    e.show_stamp
     e.get_first_width
     #e.load_hash
-    collection = e.load_photo
+    #collection = e.get_array_of_photos
+
   end
 
 

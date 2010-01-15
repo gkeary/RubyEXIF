@@ -22,7 +22,7 @@ class MyTest < Test::Unit::TestCase
   # down fixture information.
 
   def test_photo_load
-    z = @@d.load_photo     
+    z = @@d.get_array_of_photos
     assert_operator(z.size, :>, 0)
   end
 

@@ -1,6 +1,11 @@
 This project will:
 start at a given directory.
 recursively identify JPG files
+find each files DateTimeOriginal
+
+output a yaml file
+
+O
 Pass each file to the EXIFTOOL executable and obtain all of the EXIF tags.
 Collect data in a hash which is keyed by EXIF:DateTimeOriginal.
 Identifying duplicates as it goes.
