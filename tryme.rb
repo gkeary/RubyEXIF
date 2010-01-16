@@ -1,19 +1,21 @@
 require 'exifr'
 
+module Pix
 # populate an array with all of the jpg files
 f_array = Dir[File.join('C:/exif/rubyexif/lib',"**/*.jpg")]
 
-def show_filename(pix_path)
+
+def self.show_filename(pix_path)
   file_name = File::basename(pix_path)
   return file_name
 end
 
-def show_folder(pix_path)
+def self.show_folder(pix_path)
   folder = File::dirname(pix_path).split('/')[-1]
   return folder
 end
 
-def populate_hash (f_array)
+def self.populate_hash (f_array)
     h1={}
     first_pass = f_array.each do |pix_path|
     snap_time = EXIFR::JPEG.new(pix_path).date_time
@@ -29,7 +31,7 @@ def populate_hash (f_array)
   return h1
 end
 
-def transform_hash (hh = {})
+def self.transform_hash (hh = {})
   a=0; result={}
   hh.each do |x, y|
     a += 1
@@ -39,10 +41,13 @@ def transform_hash (hh = {})
     result = result.merge(pk => v2)
   end
   return result
- end
+end
 
+#
+#TODO: put this in a $0 == __FILENAME__ sandwich...
+#
 first_pass = populate_hash(f_array)
 photo_hash = transform_hash(first_pass)
 puts "Pix count(unique): #{photo_hash.size}"
 puts photo_hash.sort.to_yaml
-
+end

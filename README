@@ -1,9 +1,21 @@
 This project will:
 start at a given directory.
 recursively identify JPG files
-find each files DateTimeOriginal
+find the 'DateTimeOriginal' for each of the files.
 
 output a yaml file
+
+yaml file  (for now) looks like:
+  ---
+  - - k1
+    - taken_at: 2008-09-28 13:23:30 -04:00
+      1: C:/exif/rubyexif/lib/JPGFiles/IMG_2118.jpg
+      2: C:/exif/rubyexif/lib/JPGFiles/TestCopy/IMG_2118.jpg
+  - - k2
+    - taken_at:
+      1: C:/exif/rubyexif/lib/JPGFiles/yaml_image.jpg
+
+
 
 O
 Pass each file to the EXIFTOOL executable and obtain all of the EXIF tags.
