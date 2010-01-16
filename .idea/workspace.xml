@@ -6,12 +6,12 @@
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="3e21710d-306f-42b7-8b0b-ea2d2c824465" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tryme.rb" afterPath="$PROJECT_DIR$/tryme.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exif.rb" afterPath="$PROJECT_DIR$/exif.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+    <ignored mask="*.*~" />
     <ignored path="RubyEXIF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored mask="*.*~" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,7 @@
       <file leaf-file-name="tryme.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tryme.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="20" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
+            <state line="53" column="0" selection-start="136" selection-end="1114" vertical-scroll-proportion="-29.708334">
               <folding />
             </state>
           </provider>
@@ -48,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exif.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="exif.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exif.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="33" selection-start="2737" selection-end="2737" vertical-scroll-proportion="0.0">
+            <state line="144" column="33" selection-start="3342" selection-end="3342" vertical-scroll-proportion="0.4465409">
               <folding />
             </state>
           </provider>
@@ -69,16 +69,16 @@
       <file leaf-file-name="my_test.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="-11.25">
+            <state line="10" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="20" selection-start="261" selection-end="261" vertical-scroll-proportion="0.5928144">
+            <state line="20" column="1" selection-start="530" selection-end="530" vertical-scroll-proportion="-1.125">
               <folding />
             </state>
           </provider>
@@ -97,10 +97,10 @@
         <option value="$PROJECT_DIR$/test/test_exif.rb" />
         <option value="$PROJECT_DIR$/lib/exif.rb" />
         <option value="$PROJECT_DIR$/my_test.rb" />
-        <option value="$PROJECT_DIR$/exif.rb" />
         <option value="$PROJECT_DIR$/output.yaml" />
         <option value="$PROJECT_DIR$/tryme.rb" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/exif.rb" />
       </list>
     </option>
   </component>
@@ -130,7 +130,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -151,18 +150,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="last_opened_file_path" value="C:\ruby\lib\ruby\gems\1.8\gems\gems\exifr-0.10.9\lib" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Ruby.tryme">
+  <component name="RunManager" selected="Ruby.exif">
     <configuration default="false" name="test_exif" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="RubyEXIF" />
@@ -353,19 +353,19 @@
     <frame x="-4" y="-4" width="1288" height="968" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32844934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24880762" sideWeight="0.37118438" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24880762" sideWeight="0.47130647" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24880762" sideWeight="0.2844933" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24880762" sideWeight="0.18437119" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32722834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32844934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -411,13 +411,6 @@
         <state line="154" column="0" selection-start="5154" selection-end="5154" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="-11.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/JPGFiles/IMG_2117.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -438,13 +431,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exif.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="33" selection-start="2737" selection-end="2737" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/JPGFiles/TestCopy/IMG_2118.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -453,13 +439,6 @@
     <entry file="file://$PROJECT_DIR$/lib/JPGFiles/TestCopy/IMG_2117.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="19" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/JPGFiles/IMG_2118.jpg">
@@ -472,21 +451,40 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tryme.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="20" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/JPGFiles/yaml_image.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/output.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="19" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="261" selection-end="261" vertical-scroll-proportion="0.5928144">
+        <state line="20" column="1" selection-start="530" selection-end="530" vertical-scroll-proportion="-1.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tryme.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="136" selection-end="1114" vertical-scroll-proportion="-29.708334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exif.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="33" selection-start="3342" selection-end="3342" vertical-scroll-proportion="0.4465409">
           <folding />
         </state>
       </provider>

@@ -15,8 +15,10 @@ yaml file  (for now) looks like:
     - taken_at:
       1: C:/exif/rubyexif/lib/JPGFiles/yaml_image.jpg
 
+ this is 3 lines per non-dupe and 4 or more lines per real dupe.
+ lets see how this plays....
 
-
+ 
 O
 Pass each file to the EXIFTOOL executable and obtain all of the EXIF tags.
 Collect data in a hash which is keyed by EXIF:DateTimeOriginal.
