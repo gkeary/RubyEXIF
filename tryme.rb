@@ -1,35 +1,48 @@
-# Let's figure out how to handle arrays of photos
-#  as well as hashes.
-
-# populate an array of jpg files
-
 require 'exifr'
+
+# populate an array with all of the jpg files
 f_array = Dir[File.join('C:/exif/rubyexif/lib',"**/*.jpg")]
 
-h1 = { }
-photo_hash = {}
-f_array.each do |file|
-            exposure_time_stamp = EXIFR::JPEG.new(file).date_time
-            if h1.has_key?(exposure_time_stamp)
-              ts_index = h1[exposure_time_stamp].size + 1
-              h1[exposure_time_stamp] = h1[exposure_time_stamp].merge(ts_index=> file, "duplicate"=>true)
-            else
-              h1[exposure_time_stamp] = {1=>file,"duplicate"=> false}
-            end
-end #f_array.each
- def transform(hh = {})
-   a= 0
-   result={}
-   hh.each do |x,y|
-     pk = "k#{a+=1}"
-     v1= {"ts" => x}
-     v2= v1.merge(y)
-     result = result.merge(pk => v2)
-   end
-result
+def show_filename(pix_path)
+  file_name = File::basename(pix_path)
+  return file_name
+end
+
+def show_folder(pix_path)
+  folder = File::dirname(pix_path).split('/')[-1]
+  return folder
+end
+
+def populate_hash (f_array)
+    h1={}
+    first_pass = f_array.each do |pix_path|
+    snap_time = EXIFR::JPEG.new(pix_path).date_time
+
+    if h1.has_key?(snap_time)
+      ts_index = h1[snap_time].size + 1
+      hh= h1[snap_time]
+      h1[snap_time] = hh.merge(ts_index=> pix_path)
+    else
+      h1[snap_time] = {1=>pix_path}
+    end
+  end
+  return h1
+end
+
+def transform_hash (hh = {})
+  a=0; result={}
+  hh.each do |x, y|
+    a += 1
+    pk = "k#{a}"
+    v1= {"taken_at" => x}
+    v2= v1.merge(y)
+    result = result.merge(pk => v2)
+  end
+  return result
  end
 
-photo_hash = transform(h1)
-puts photo_hash.size
+first_pass = populate_hash(f_array)
+photo_hash = transform_hash(first_pass)
+puts "Pix count(unique): #{photo_hash.size}"
 puts photo_hash.sort.to_yaml
 

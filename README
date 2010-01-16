@@ -19,8 +19,11 @@ For now, do not debug in RubyMine....
 ref:  http://youtrack.jetbrains.net/issue/RUBY-4932
 
 
-TODO:  see what can be done about lib directory
-TODO:  remove duplicate directory JPGFiles...
+TODO:  work on tryme -- get it to dump some good yaml
+TODO:  make a new module in tryme
+TODO:  integrate tryme back into exif.rb
+TODO:  understand the yaml file which I dump to
+
 
 I think Rubymine does not use LIB and Test directories by default (they are possibly GEM specific folders ? )
 
